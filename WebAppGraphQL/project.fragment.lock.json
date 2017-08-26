@@ -5,13 +5,13 @@
       "type": "project",
       "framework": ".NETFramework,Version=v4.5.2",
       "compile": {
-        "bin/Release/Model.dll": {}
+        "bin/Debug/Model.dll": {}
       },
       "runtime": {
-        "bin/Release/Model.dll": {}
+        "bin/Debug/Model.dll": {}
       },
       "contentFiles": {
-        "bin/Release/Model.pdb": {
+        "bin/Debug/Model.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true
@@ -22,13 +22,13 @@
       "type": "project",
       "framework": ".NETFramework,Version=v4.5.2",
       "compile": {
-        "bin/Release/Repository.dll": {}
+        "bin/Debug/Repository.dll": {}
       },
       "runtime": {
-        "bin/Release/Repository.dll": {}
+        "bin/Debug/Repository.dll": {}
       },
       "contentFiles": {
-        "bin/Release/Repository.pdb": {
+        "bin/Debug/Repository.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true

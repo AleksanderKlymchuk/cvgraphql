@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "exports": {
+    "Model/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Release/Model.dll": {}
+      },
+      "runtime": {
+        "bin/Release/Model.dll": {}
+      },
+      "contentFiles": {
+        "bin/Release/Model.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Release/Repository.dll": {}
+      },
+      "runtime": {
+        "bin/Release/Repository.dll": {}
+      },
+      "contentFiles": {
+        "bin/Release/Repository.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

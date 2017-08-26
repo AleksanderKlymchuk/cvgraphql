@@ -1,0 +1,7 @@
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\bin\Release\Repository.dll
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\bin\Release\Repository.pdb
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\bin\Release\Model.dll
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\bin\Release\Model.pdb
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Release\Repository.csprojResolveAssemblyReference.cache
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Release\Repository.dll
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Release\Repository.pdb

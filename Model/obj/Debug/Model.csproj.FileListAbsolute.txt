@@ -1,0 +1,4 @@
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Model\bin\Debug\Model.dll
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Model\bin\Debug\Model.pdb
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Model\obj\Debug\Model.dll
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Model\obj\Debug\Model.pdb

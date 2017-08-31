@@ -41,9 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Company.cs" />
+    <Compile Include="ICVContext.cs" />
+    <Compile Include="SqlConnection.cs" />
     <Compile Include="Duration.cs" />
     <Compile Include="Education.cs" />
     <Compile Include="IPersonRepository.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonMock.cs" />
     <Compile Include="PersonSkill.cs" />

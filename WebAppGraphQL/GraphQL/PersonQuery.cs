@@ -23,7 +23,7 @@ namespace WebAppGraphQL.GraphQL
                      {
                          var firstName = context.GetArgument<string>("firstName");
                          var lastName = context.GetArgument<string>("lastName");
-                         return personRepository.GetPerson(firstName,lastName);
+                         return personRepository.Find(x=>x.FirstName.ToLower()==firstName.ToLower() && x.LastName.ToLower()==lastName.ToLower());
                      }
                 );
           

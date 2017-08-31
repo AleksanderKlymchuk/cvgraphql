@@ -4,16 +4,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Repository
 {
-    public class PersonRepository : IPersonRepository
+    public class PersonRepository :Repository<Person>, IPersonRepository
     {
-       
-        public Person GetPerson(string firstName, string LastName)
+        public PersonRepository(CVContext context) : base(context)
         {
-            return PersonMock.Persons().Where(x => x.FirstName.ToLower() == firstName.ToLower() && x.LastName.ToLower() == LastName.ToLower()).FirstOrDefault();
         }
-       
+        
+        private CVContext CVContext
+        {
+            get { return _context as CVContext; }
+        }
     }
 }

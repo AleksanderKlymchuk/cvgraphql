@@ -36,7 +36,12 @@ namespace WebAppGraphQL
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            CVConnection cvConnection = new CVConnection {
+                ConnectionString= @"data source=(LocalDb)\MSSQLLocalDB; initial catalog=CV; integrated security=True;"
+            };
+            services.AddSingleton<ISqlConnectionString>(cvConnection);
             services.AddTransient<IPersonRepository, PersonRepository>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddSingleton<PersonType>();
             services.AddSingleton<SkillType>();
             services.AddSingleton<CompanyType>();

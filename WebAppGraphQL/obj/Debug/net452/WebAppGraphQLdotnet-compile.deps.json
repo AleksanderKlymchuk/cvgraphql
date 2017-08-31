@@ -1899,6 +1899,8 @@
           "Model": "1.0.0"
         },
         "runtime": {
+          "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll": {},
+          "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll": {},
           "bin/Debug/Repository.dll": {}
         }
       },

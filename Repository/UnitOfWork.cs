@@ -10,10 +10,10 @@ namespace Repository
     public class UnitOfWork : IUnitOfWork
     {
         private readonly CVContext _cvContext;
-        public UnitOfWork(IPersonRepository personRepository,CVConnection connection)
+        public UnitOfWork(IPersonRepository personRepository)
         {
             Persons = personRepository;
-            _cvContext = new CVContext(connection);
+            _cvContext = new CVContext();
         }
         public IPersonRepository Persons { get; private set; }
         

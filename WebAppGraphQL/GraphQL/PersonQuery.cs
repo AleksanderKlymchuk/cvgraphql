@@ -10,20 +10,22 @@ namespace WebAppGraphQL.GraphQL
     public class PersonQuery : ObjectGraphType<object>
     {
 
-        public PersonQuery(IPersonRepository personRepository)
+        public PersonQuery(IUnitOfWork unitOfWork)
         {
-            Field<PersonType>("person",
+           
+            Field<PersonType>(
+                "person",
                 arguments: new QueryArguments(
                      new QueryArgument<StringGraphType>() { Name = "firstName" },
                      new QueryArgument<StringGraphType>() { Name = "lastName" }
-                     
+
                     ),
 
                      resolve: context =>
                      {
                          var firstName = context.GetArgument<string>("firstName");
                          var lastName = context.GetArgument<string>("lastName");
-                         return personRepository.Find(x=>x.FirstName.ToLower()==firstName.ToLower() && x.LastName.ToLower()==lastName.ToLower());
+                         return unitOfWork.Persons.Find(x=>x.FirstName.ToLower()==firstName.ToLower() && x.LastName.ToLower()==lastName.ToLower());
                      }
                 );
           

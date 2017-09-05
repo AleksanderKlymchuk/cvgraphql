@@ -4,6 +4,7 @@ using GraphQL.Types;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Model;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -40,16 +41,29 @@ namespace WebAppGraphQL.Middleware
                     }
                     else
                     {
-
-                        var result = await new DocumentExecuter().ExecuteAsync(options =>
+                        try
                         {
-                            options.Schema = _schema;
-                            options.Query = query;
+                            var request = JsonConvert.DeserializeObject<GraphQLRequest>(query);
+                           
+                            var result = await new DocumentExecuter().ExecuteAsync(options =>
+                            {
+                                options.Schema = _schema;
+                                options.Query = request.Query;
+                                options.OperationName = request.OperationName;
+                                options.Inputs = request.Variables.ToInputs();
 
 
-                        }).ConfigureAwait(false);
-                        var json = new DocumentWriter(indent: true).Write(result);
-                        await context.Response.WriteAsync(json);
+                            }).ConfigureAwait(false);
+                            var json = new DocumentWriter(indent: true).Write(result);
+                            await context.Response.WriteAsync(json);
+                        }
+                        catch (Exception ex)
+                        {
+
+                            throw;
+                        }
+                      
+                       
                     }
                 }
             }

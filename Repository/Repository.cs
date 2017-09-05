@@ -16,6 +16,7 @@ namespace Repository
         public Repository(DbContext context)
         {
             _context = context;
+          
         }
         public void Add(T obj)
         {
@@ -29,7 +30,7 @@ namespace Repository
 
         public IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
-          return  _context.Set<T>().Where(predicate);
+          return  _context.Set<T>().DefaultIfEmpty(null).Where(predicate);
         }
 
         public T Get(int Id)

@@ -12,7 +12,7 @@ namespace WebAppGraphQL.GraphQL
         public PersonType()
         {
             Name = "person";
-            Field(x => x.Id).Description("Person Id");
+            Field(x => x.ID).Description("Person Id");
             Field(x => x.FirstName).Description("Person First Name");
             Field(x => x.LastName).Description("Person Last Name");
             Field(x => x.Age).Description("Person Age");

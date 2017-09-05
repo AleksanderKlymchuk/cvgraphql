@@ -10,7 +10,7 @@ namespace Repository
 {
     public class PersonRepository :Repository<Person>, IPersonRepository
     {
-        public PersonRepository(CVContext context) : base(context)
+        public PersonRepository() : base(new CVContext())
         {
         }
         

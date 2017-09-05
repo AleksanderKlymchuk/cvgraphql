@@ -11,6 +11,7 @@ namespace WebAppGraphQL.GraphQL
         public PersonSchema(Func<Type, IGraphType> resolveType) : base(resolveType)
         {
             Query = (PersonQuery)resolveType(typeof(PersonQuery));
+            Mutation = (PersonMutation)resolveType(typeof(PersonMutation));
         }
     }
 }

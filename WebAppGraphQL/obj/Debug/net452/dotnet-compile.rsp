@@ -134,6 +134,9 @@ C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQ
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\CompanyType.cs
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\DurationType.cs
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\EducationType.cs
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\GraphQlRequest.cs
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\PersonInputType.cs
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\PersonMutation.cs
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\PersonQuery.cs
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\PersonSchema.cs
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\GraphQL\PersonSkillType.cs

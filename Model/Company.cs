@@ -10,7 +10,7 @@ namespace Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<Position> Positions { get; set; }
+        public virtual ICollection<Position> Positions { get; set; }
 
 
     }

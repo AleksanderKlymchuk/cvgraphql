@@ -12,10 +12,16 @@ namespace Repository
 {
     public class CVContext : DbContext, ICVContext
     {
-        public CVContext(CVConnection connection) : base(connection.ConnectionString)
+        //public CVContext(CVConnection connection) : base(connection.ConnectionString)
+        //{
+        //    this.Configuration.LazyLoadingEnabled = false;
+        //}
+
+        public CVContext():base("CVConnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
+
         public virtual DbSet<Person> Persons { get; set; }
     }
 }

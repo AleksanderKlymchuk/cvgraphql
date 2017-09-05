@@ -43,11 +43,13 @@ namespace WebAppGraphQL
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddSingleton<PersonType>();
+            services.AddSingleton<PersonInputType>();
             services.AddSingleton<SkillType>();
             services.AddSingleton<CompanyType>();
             services.AddSingleton<ProjectType>();
             services.AddSingleton<EducationType>();
             services.AddSingleton<PersonQuery>();
+            services.AddSingleton<PersonMutation>();
             services.AddSingleton<PositionType>();
             services.AddSingleton<DurationType>();
             services.AddSingleton<PersonSkillType>();

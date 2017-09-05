@@ -8,8 +8,9 @@ namespace Model
 {
     public class PersonSkill
     {
-        public int PersonId { get; set; }
-        public int SkillId { get; set; }
+        public int ID{ get; set; }
+        public int PersonID { get; set; }
+        public int SkillID { get; set; }
         public string Level { get; set; }
         public Person Person { get; set; }
         public Skill Skill { get; set; }

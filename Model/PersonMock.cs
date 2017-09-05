@@ -13,13 +13,13 @@ namespace Model
             return new List<Person>() {
                  new Person()
                  {
-                     Id = 1,
+                     ID = 1,
                      FirstName = "Oleksandr",
                      LastName = "Klymchuk",
                      Age = 32,
                      Educations = Educations(),
                      PersonSkills = PersonSkills(),
-                     Companies=Companies(),
+                     //Companies=Companies(),
                      Projects = Projects()
               }
 
@@ -49,16 +49,16 @@ namespace Model
 
 
             return new List<Project>() {
-                    new Project() {Id=1,Name="Protravel"},
-                    new Project() {Id=1,Name="Harley davidson integration"},
-                    new Project() { Id=2,Name="TWM"},
-                    new Project() { Id=3,Name="BTS"},
-                    new Project() { Id=4,Name="TDW"},
-                    new Project() { Id=5,Name="MyWorkshop"},
-                    new Project() { Id=6,Name="IdP"},
-                    new Project() { Id=7,Name="Context Server"},
-                    new Project() { Id=8,Name="Data Converting Tool"},
-                    new Project() { Id=9,Name="Car People"}
+                    new Project() {ID=1,Name="Protravel"},
+                    new Project() {ID=1,Name="Harley davidson integration"},
+                    new Project() { ID=2,Name="TWM"},
+                    new Project() { ID=3,Name="BTS"},
+                    new Project() { ID=4,Name="TDW"},
+                    new Project() { ID=5,Name="MyWorkshop"},
+                    new Project() { ID=6,Name="IdP"},
+                    new Project() { ID=7,Name="Context Server"},
+                    new Project() { ID=8,Name="Data Converting Tool"},
+                    new Project() { ID=9,Name="Car People"}
                 };
 
         }

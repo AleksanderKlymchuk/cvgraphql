@@ -11,7 +11,7 @@ namespace WebAppGraphQL.GraphQL
     {
         public ProjectType()
         {
-            Field(x => x.Id).Description("Project Id");
+            Field(x => x.ID).Description("Project Id");
             Field(x => x.Name).Description("Project Name");
         }
     }

@@ -10,6 +10,8 @@
 -nologo
 "C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\obj\Debug\net452\dotnet-compile.assemblyinfo.cs"
 -out:"C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\bin\Debug\net452\WebAppGraphQL.exe"
+-r:"C:\Users\OK.TOLERANCE\.nuget\packages\EntityFramework\6.1.3\lib\net45\EntityFramework.SqlServer.dll"
+-r:"C:\Users\OK.TOLERANCE\.nuget\packages\EntityFramework\6.1.3\lib\net45\EntityFramework.dll"
 -r:"C:\Users\OK.TOLERANCE\.nuget\packages\GraphQL\0.17.2\lib\net45\GraphQL.dll"
 -r:"C:\Users\OK.TOLERANCE\.nuget\packages\GraphQL-Parser\2.0.0\lib\net45\GraphQL-Parser.dll"
 -r:"C:\Users\OK.TOLERANCE\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.1\lib\net451\Microsoft.AspNetCore.Antiforgery.dll"
@@ -118,10 +120,10 @@
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Security.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll"
--r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tracing.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Primitives.dll"
 -resource:"C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\obj\Debug\net452\WebAppGraphQLdotnet-compile.deps.json",WebAppGraphQL.deps.json

@@ -50,9 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CVContext.cs" />
-    <Compile Include="Migrations\201709011236066_initial.cs" />
-    <Compile Include="Migrations\201709011236066_initial.Designer.cs">
-      <DependentUpon>201709011236066_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201709061939174_initial.cs" />
+    <Compile Include="Migrations\201709061939174_initial.Designer.cs">
+      <DependentUpon>201709061939174_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repository.cs" />
@@ -71,8 +71,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709011236066_initial.resx">
-      <DependentUpon>201709011236066_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709061939174_initial.resx">
+      <DependentUpon>201709061939174_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

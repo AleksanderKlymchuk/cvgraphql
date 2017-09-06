@@ -1,11 +1,10 @@
 ﻿using Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Linq.Expressions;
 using System.Data.Entity;
+using System.Linq;
+using System.Linq.Expressions;
+
 
 namespace Repository
 {
@@ -20,7 +19,16 @@ namespace Repository
         }
         public void Add(T obj)
         {
-            _context.Set<T>().Add(obj);
+            try
+            {
+                 _context.Set<T>().Add(obj);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+           
         }
 
         public void AddRange(IEnumerable<T> objects)

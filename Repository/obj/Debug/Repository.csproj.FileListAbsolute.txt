@@ -8,7 +8,7 @@ C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\b
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\bin\Debug\EntityFramework.xml
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
-C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Debug\Repository.Migrations.initial.resources
-C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Debug\Repository.dll
 C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Debug\Repository.pdb
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Debug\Repository.Migrations.initial.resources
+C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache

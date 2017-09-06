@@ -11,10 +11,11 @@ using System.IO;
 using Microsoft.AspNetCore.Http;
 using GraphQL.Types;
 using GraphQL;
-using Model;
 using WebAppGraphQL.Middleware;
-using Repository;
 using WebAppGraphQL.GraphQL;
+using Model;
+using Repository;
+
 
 namespace WebAppGraphQL
 {
@@ -36,12 +37,17 @@ namespace WebAppGraphQL
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            CVConnection cvConnection = new CVConnection {
-                ConnectionString= @"data source=(LocalDb)\MSSQLLocalDB; initial catalog=CV; integrated security=True;"
-            };
-            services.AddSingleton<ISqlConnectionString>(cvConnection);
+            //CVConnection cvConnection = new CVConnection {
+            //    ConnectionString= @"data source=(LocalDb)\MSSQLLocalDB; initial catalog=CV; integrated security=True;"
+            //};
+          
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddSingleton(new CVContext());
+          
+
+
+
             services.AddSingleton<PersonType>();
             services.AddSingleton<PersonInputType>();
             services.AddSingleton<SkillType>();

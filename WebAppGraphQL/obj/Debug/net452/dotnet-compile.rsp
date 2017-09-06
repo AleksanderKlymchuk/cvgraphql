@@ -14,6 +14,8 @@
 --version:1.0.0.0
 --informational-version:1.0.0
 --target-framework:.NETFramework,Version=v4.5.2
+--reference:C:\Users\OK.TOLERANCE\.nuget\packages\EntityFramework\6.1.3\lib\net45\EntityFramework.SqlServer.dll
+--reference:C:\Users\OK.TOLERANCE\.nuget\packages\EntityFramework\6.1.3\lib\net45\EntityFramework.dll
 --reference:C:\Users\OK.TOLERANCE\.nuget\packages\GraphQL\0.17.2\lib\net45\GraphQL.dll
 --reference:C:\Users\OK.TOLERANCE\.nuget\packages\GraphQL-Parser\2.0.0\lib\net45\GraphQL-Parser.dll
 --reference:C:\Users\OK.TOLERANCE\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.1\lib\net451\Microsoft.AspNetCore.Antiforgery.dll
@@ -122,10 +124,10 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Security.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll
---reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.ComponentModel.DataAnnotations.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Diagnostics.Tracing.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Primitives.dll
 --resource:"C:\Users\OK.TOLERANCE\Documents\Visual Studio 2015\Projects\GraphQL\WebAppGraphQL\obj\Debug\net452\WebAppGraphQLdotnet-compile.deps.json",WebAppGraphQL.deps.json

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETFramework,Version=v4.5.2/",
-    "signature": "2af2f7b70bfa60c5a88750ff868f552f7e6a6900"
+    "signature": "c499297ecdad0f9556e7c621703d3df5986c4ecc"
   },
   "compilationOptions": {
     "defines": [
@@ -30,10 +30,20 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "GraphQL": "0.17.2"
+          "GraphQL": "0.17.2",
+          "EntityFramework": "6.1.3"
         },
         "compile": {
           "WebAppGraphQL.exe": {}
+        }
+      },
+      "EntityFramework/6.1.3": {
+        "dependencies": {
+          "System.ComponentModel.DataAnnotations": "4.0.0.0"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
         }
       },
       "GraphQL/0.17.2": {
@@ -992,6 +1002,11 @@
           ".NETFramework/v4.5.2/System.Core.dll": {}
         }
       },
+      "System.ComponentModel.DataAnnotations/4.0.0.0": {
+        "compile": {
+          ".NETFramework/v4.5.2/System.ComponentModel.DataAnnotations.dll": {}
+        }
+      },
       "System.Security/4.0.0.0": {
         "compile": {
           ".NETFramework/v4.5.2/System.Security.dll": {}
@@ -1005,11 +1020,6 @@
       "System.Xml.Linq/4.0.0.0": {
         "compile": {
           ".NETFramework/v4.5.2/System.Xml.Linq.dll": {}
-        }
-      },
-      "System.ComponentModel.DataAnnotations/4.0.0.0": {
-        "compile": {
-          ".NETFramework/v4.5.2/System.ComponentModel.DataAnnotations.dll": {}
         }
       },
       "System.Diagnostics.Tracing/4.0.10.0": {
@@ -1039,10 +1049,20 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
-          "GraphQL": "0.17.2"
+          "GraphQL": "0.17.2",
+          "EntityFramework": "6.1.3"
         },
         "runtime": {
           "WebAppGraphQL.exe": {}
+        }
+      },
+      "EntityFramework/6.1.3": {
+        "dependencies": {
+          "System.ComponentModel.DataAnnotations": "4.0.0.0"
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
         }
       },
       "GraphQL/0.17.2": {
@@ -1907,10 +1927,10 @@
       "mscorlib/4.0.0.0": {},
       "System/4.0.0.0": {},
       "System.Core/4.0.0.0": {},
+      "System.ComponentModel.DataAnnotations/4.0.0.0": {},
       "System.Security/4.0.0.0": {},
       "System.Xml/4.0.0.0": {},
       "System.Xml.Linq/4.0.0.0": {},
-      "System.ComponentModel.DataAnnotations/4.0.0.0": {},
       "System.Diagnostics.Tracing/4.0.10.0": {},
       "System.Reflection.Primitives/4.0.0.0": {}
     }
@@ -1920,6 +1940,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EntityFramework/6.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2xzFHAF3VVdmTR3//MygtQpwfbDjeaq+nQwCcokLzen7MKHOojPaxNPQPa4diHY1QtcR7zlHAJHNRqPB7W2Syw=="
     },
     "GraphQL/0.17.2": {
       "type": "package",
@@ -2476,6 +2501,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "System.ComponentModel.DataAnnotations/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
     "System.Security/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -2487,11 +2517,6 @@
       "sha512": ""
     },
     "System.Xml.Linq/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.ComponentModel.DataAnnotations/4.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

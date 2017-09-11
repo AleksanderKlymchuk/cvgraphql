@@ -44,9 +44,6 @@ namespace WebAppGraphQL
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddSingleton(new CVContext());
-          
-
-
 
             services.AddSingleton<PersonType>();
             services.AddSingleton<PersonInputType>();

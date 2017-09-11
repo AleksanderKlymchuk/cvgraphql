@@ -38,7 +38,7 @@ namespace Repository
 
         public IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
-          return  _context.Set<T>().DefaultIfEmpty(null).Where(predicate);
+          return  _context.Set<T>().DefaultIfEmpty(null).Where(predicate).ToList();
         }
 
         public T Get(int Id)

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{7F12511F-38F9-47CA-8D27-E5F21F0DB1C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestGraphQL", "UnitTestGraphQL\UnitTestGraphQL.csproj", "{1B7658A0-DCBB-4E97-9AFF-D000DE188198}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{528DAFD9-1050-4613-92D8-F52553F560F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,10 @@ Global
 		{7F12511F-38F9-47CA-8D27-E5F21F0DB1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F12511F-38F9-47CA-8D27-E5F21F0DB1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F12511F-38F9-47CA-8D27-E5F21F0DB1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7658A0-DCBB-4E97-9AFF-D000DE188198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7658A0-DCBB-4E97-9AFF-D000DE188198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7658A0-DCBB-4E97-9AFF-D000DE188198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7658A0-DCBB-4E97-9AFF-D000DE188198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

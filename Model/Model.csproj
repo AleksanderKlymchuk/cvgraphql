@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Company.cs" />
     <Compile Include="ICVContext.cs" />
+    <Compile Include="Specifications\ISpecification.cs" />
+    <Compile Include="Specifications\PersonSpecification.cs" />
     <Compile Include="SqlConnection.cs" />
     <Compile Include="Duration.cs" />
     <Compile Include="Education.cs" />

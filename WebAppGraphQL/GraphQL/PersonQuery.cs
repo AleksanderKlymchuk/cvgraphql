@@ -1,5 +1,6 @@
 ﻿using GraphQL.Types;
 using Model;
+using Model.Specifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,10 @@ namespace WebAppGraphQL.GraphQL
                      {
                          var firstName = context.GetArgument<string>("firstName");
                          var lastName = context.GetArgument<string>("lastName");
-                         return unitOfWork.Persons.Find(x=>x.FirstName.ToLower()==firstName.ToLower() && x.LastName.ToLower()==lastName.ToLower());
+
+                         var spec = new PersonSpecification(firstName, lastName);
+                        return unitOfWork.Persons.Find(spec.Criteria).FirstOrDefault();
+                       
                      }
                 );
           

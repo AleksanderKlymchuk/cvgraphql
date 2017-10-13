@@ -1,0 +1,13 @@
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\UnitTestGraphQL.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\UnitTestGraphQL.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Moq.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Ploeh.AutoFixture.AutoMoq.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Ploeh.AutoFixture.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Moq.xml
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Ploeh.AutoFixture.xml
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Ploeh.AutoFixture.AutoMoq.xml
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\obj\Debug\UnitTestGraphQL.csprojResolveAssemblyReference.cache
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\obj\Debug\UnitTestGraphQL.csproj.CoreCompileInputs.cache
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\obj\Debug\UnitTestGraphQL.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\obj\Debug\UnitTestGraphQL.pdb

@@ -57,7 +57,7 @@ namespace WebAppGraphQL
             services.AddSingleton<DurationType>();
             services.AddSingleton<PersonSkillType>();
             services.AddSingleton<ISchema>(s => new PersonSchema(type => (GraphType)s.GetService(type)));
-            
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,6 +67,7 @@ namespace WebAppGraphQL
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
             app.UseGraphQLEndpoint();
+            app.UseMvc();
             
         }
     }

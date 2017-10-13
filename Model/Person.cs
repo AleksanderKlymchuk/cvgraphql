@@ -18,7 +18,33 @@ namespace Model
         public virtual ICollection<PersonSkill> PersonSkills { get; set; }
         //public virtual ICollection<Company> Companies { get; set; }
 
-        public virtual ICollection<Project> Projects{ get; set; }
+        public virtual ICollection<Project> Projects { get; set; }
+
+    }
+    public class PersonProperties
+    {
+        public Property<string> FirstName;
+        public Property<string> LastName;
+        public Property<int?> Age;
+        public Property<IEnumerable<CourseProperties>> Courses; 
+
+        public void Set<T>(T input, ref Property<T> output)
+        {
+            if (input != null)
+            {
+                output = input;
+            }
+            else
+            {
+                output = null;
+            }
+        }
+
+
+    }
+    public class CourseProperties
+    {
+        public Property<int> Id;
 
     }
 }

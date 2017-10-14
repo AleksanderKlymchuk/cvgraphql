@@ -28,18 +28,16 @@ namespace Model
         public Property<int?> Age;
         public Property<IEnumerable<CourseProperties>> Courses; 
 
-        public void Set<T>(T input, ref Property<T> output)
+        public Property<T> Set<T>(T input)
         {
+            Property<T> prop=null;
             if (input != null)
             {
-                output = input;
+                prop = input;
+                return prop.Value;
             }
-            else
-            {
-                output = null;
-            }
+            return prop;
         }
-
 
     }
     public class CourseProperties

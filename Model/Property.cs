@@ -21,5 +21,16 @@ namespace Model
         public static implicit operator T(Property<T> value) => value.Value;
 
         public static implicit operator Property<T>(T value) => new Property<T> { Value = value };
+
+        public void Set(T input)
+        {
+            
+            Property<T> prop = null;
+            if (input != null)
+            {
+                prop = input;
+            }
+            this.Value = prop;
+        }
     }
 }

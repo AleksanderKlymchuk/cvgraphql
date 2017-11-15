@@ -19,10 +19,11 @@ namespace WebAppGraphQL.GraphQL
             Field<IntGraphType>("Age");
             Field<ListGraphType<IntGraphType>>("Courses");
         }
+
+
+    }
     
     
-    }
-   
-    }
-   
+}
+
 

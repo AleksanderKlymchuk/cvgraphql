@@ -1,36 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Model
+﻿namespace Model
 {
-    public class Property<T>
-    {
-
-        private T _value;
-
-        public T Value
-        {
-            get => _value;
-            set => _value = value;
-        }
+	public struct Property<T>
+	{
+		private T value;
+		public bool IsSet { get; private set; }
 
 
-        public static implicit operator T(Property<T> value) => value.Value;
+		public T Value
+		{
+			get { return value; }
+			set
+			{
+				this.value = value;
+				IsSet = true;
+			}
+		}
 
-        public static implicit operator Property<T>(T value) => new Property<T> { Value = value };
 
-        public void Set(T input)
-        {
-            
-            Property<T> prop = null;
-            if (input != null)
-            {
-                prop = input;
-            }
-            this.Value = prop;
-        }
-    }
+		public static implicit operator T(Property<T> value)
+		{
+			return value.Value;
+		}
+		public static implicit operator Property<T>(T value)
+		{
+			return new Property<T>
+			{
+				Value = value
+			};
+		}
+
+
+	}
 }
+

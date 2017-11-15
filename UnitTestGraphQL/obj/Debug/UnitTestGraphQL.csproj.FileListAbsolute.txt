@@ -11,3 +11,5 @@ C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Un
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\obj\Debug\UnitTestGraphQL.csproj.CoreCompileInputs.cache
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\obj\Debug\UnitTestGraphQL.dll
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\obj\Debug\UnitTestGraphQL.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Model.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\UnitTestGraphQL\bin\Debug\Model.pdb

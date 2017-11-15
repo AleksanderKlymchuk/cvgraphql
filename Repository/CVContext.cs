@@ -5,7 +5,7 @@ namespace Repository
 {
     public class CVContext : DbContext, ICVContext
     {
-        public CVContext():base(@"data source = (LocalDb)\MSSQLLocalDB; initial catalog = CV; integrated security = True;")
+        public CVContext():base(@"data source = (LocalDb)\MSSQLLocalDB; initial catalog = EFTest; integrated security = True;")
         {
 
         }

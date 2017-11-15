@@ -1,5 +1,6 @@
-﻿using Model;
-
+﻿using System.Collections.Generic;
+using Model;
+using System.Linq;
 
 namespace Repository
 {
@@ -9,7 +10,11 @@ namespace Repository
         {
            
         }
-        
-       
+
+        public IEnumerable<Person> GetAll(string orderby)
+        {
+            orderby = orderby ?? "firstname";
+            return _context.Set<Person>().SqlQuery($"select * from Person order by {orderby} asc").ToList();
+        }
     }
 }

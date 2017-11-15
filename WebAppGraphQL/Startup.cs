@@ -40,7 +40,7 @@ namespace WebAppGraphQL
             //CVConnection cvConnection = new CVConnection {
             //    ConnectionString= @"data source=(LocalDb)\MSSQLLocalDB; initial catalog=CV; integrated security=True;"
             //};
-          
+
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddSingleton(new CVContext());
@@ -68,8 +68,8 @@ namespace WebAppGraphQL
             loggerFactory.AddDebug();
             app.UseGraphQLEndpoint();
             app.UseMvc();
-            
+
         }
     }
-   
+
 }

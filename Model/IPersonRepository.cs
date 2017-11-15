@@ -8,7 +8,7 @@ namespace Model
 {
     public interface IPersonRepository:IRepository<Person>
     {
-       /// Person GetPerson(string firstName,string LastName);
-       
+        /// Person GetPerson(string firstName,string LastName);
+        IEnumerable<Person> GetAll(string orderby);
     }
 }

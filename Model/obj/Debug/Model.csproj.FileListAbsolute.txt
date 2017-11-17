@@ -9,3 +9,9 @@ C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Mo
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Model\obj\Debug\Model.dll
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Model\obj\Debug\Model.pdb
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\development\private\cvgraphql\Model\bin\Debug\Model.dll
+C:\development\private\cvgraphql\Model\bin\Debug\Model.pdb
+C:\development\private\cvgraphql\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\development\private\cvgraphql\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\development\private\cvgraphql\Model\obj\Debug\Model.dll
+C:\development\private\cvgraphql\Model\obj\Debug\Model.pdb

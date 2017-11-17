@@ -1,6 +1,5 @@
 ﻿using GraphQL.Types;
 using Model;
-using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -18,73 +17,34 @@ namespace WebAppGraphQL.GraphQL
 					resolve: context =>
 					{
 
-						var person = context.ArgumentAsProperty<PersonProperties>("person");
+						var person = context.ArgumentAsProperties<PersonProperties>("person");
 
 						return null;
 					}
 			   );
 		}
-		private PersonProperties Map(PersonInput input)
-		{
-
-
-			var properties = new PersonProperties();
-			properties.Age = null;
-			properties.FirstName = "adfd";
-			properties.LastName = null;
-			//properties.FirstName = properties.Set<string>(input.FirstName);
-			//properties.LastName= properties.Set<string>(input.LastName);
-			//properties.Age= properties.Set<int?>(input.Age);
-			//Set<string>(input.FirstName, ref properties.FirstName);
-			//Set<string>(input.LastName, ref properties.LastName);
-			//Set<int?>(input.Age, ref properties.Age);
-
-			//properties.Courses = input.Courses != null ? input.Courses.Select(x => new CourseProperties() { Id = x.Id }).ToList() : properties.Courses;
-			return properties;
-		}
-		//private void Set<T>(T input, ref Property<T> output)
-		//{
-
-		//    if (input != null)
-		//    {
-		//        output = input;
-		//    }
-		//    else
-		//    {
-		//        output = null;
-		//    }
-		//}
-
-
-
-
-
 
 	}
-	public class PersonInput
-	{
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
-		public int? Age { get; set; }
-		public List<CourseInput> Courses { get; set; }
-	}
-	public class CourseInput
-	{
-		public int Id { get; set; }
-	}
 
-	public static class ResolveFieldContextExtensions
+
+	public static class ResolveFieldContextExtension
 	{
-		public static TType ArgumentAsProperty<TType>(this ResolveFieldContext<object> context, string name)
+		/// <summary>
+		/// casts implicitly to properties 
+		/// https://github.com/graphql-dotnet/graphql-dotnet/blob/4df5e90d6aa8531b57671c89349b59e3dc084da1/src/GraphQL/ObjectExtensions.cs
+		/// </summary>
+		/// <typeparam name="TType"></typeparam>
+		/// <param name="context"></param>
+		/// <param name="name"></param>
+		/// <returns>"properties object"</returns>
+		public static TType ArgumentAsProperties<TType>(this ResolveFieldContext<object> context, string name)
 			where TType : class, new()
 		{
 			if (context.Arguments.ContainsKey(name))
 			{
 				var input = context.Arguments[name] as Dictionary<string, object>;
-
 				var type = typeof(TType);
-
-				var obj = Activator.CreateInstance(type);
+				var obj = new TType();
 
 				if (input != null)
 					foreach (var item in input)
@@ -93,19 +53,30 @@ namespace WebAppGraphQL.GraphQL
 							BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance);
 						if (fieldInfo != null)
 						{
+							if (item.Value == null)
+							{
 
-							//Type generic = typeof(Property<>).MakeGenericType(fieldInfo.FieldType);
-							//object o = Activator.CreateInstance(generic);
-							//generic.GetProperty("Value")?.SetValue(o, item.Value, null);
-
-
-							fieldInfo.SetValue(obj, Convert.ChangeType(item.Value, fieldInfo.FieldType));
-
-
+								var converter = fieldInfo.FieldType.GetMethod("op_Implicit", new[] { typeof(int?) });
+								if (converter != null)
+								{
+									var value = converter.Invoke(null, new[] { item.Value });
+									fieldInfo.SetValue(obj, value);
+								}
+							}
+							else
+							{
+								var converter = fieldInfo.FieldType.GetMethod("op_Implicit", new[] { item.Value.GetType() });
+								if (converter != null)
+								{
+									var value = converter.Invoke(null, new[] { item.Value });
+									fieldInfo.SetValue(obj, value);
+								}
+							}
 
 
 						}
 					}
+				return obj;
 			}
 
 			return null;

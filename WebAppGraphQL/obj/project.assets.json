@@ -5767,7 +5767,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\oleksandr.OK\\.nuget\\packages\\": {}
+    "C:\\Users\\okl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5775,14 +5775,14 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\oleksandr.OK\\Documents\\Visual Studio 2015\\Projects\\GraphQL\\cvgraphql\\WebAppGraphQL\\WebAppGraphQL.csproj",
+      "projectUniqueName": "C:\\development\\private\\cvgraphql\\WebAppGraphQL\\WebAppGraphQL.csproj",
       "projectName": "WebAppGraphQL",
-      "projectPath": "C:\\Users\\oleksandr.OK\\Documents\\Visual Studio 2015\\Projects\\GraphQL\\cvgraphql\\WebAppGraphQL\\WebAppGraphQL.csproj",
-      "packagesPath": "C:\\Users\\oleksandr.OK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oleksandr.OK\\Documents\\Visual Studio 2015\\Projects\\GraphQL\\cvgraphql\\WebAppGraphQL\\obj\\",
+      "projectPath": "C:\\development\\private\\cvgraphql\\WebAppGraphQL\\WebAppGraphQL.csproj",
+      "packagesPath": "C:\\Users\\okl\\.nuget\\packages\\",
+      "outputPath": "C:\\development\\private\\cvgraphql\\WebAppGraphQL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oleksandr.OK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\okl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5795,11 +5795,11 @@
       "frameworks": {
         "net452": {
           "projectReferences": {
-            "C:\\Users\\oleksandr.OK\\Documents\\Visual Studio 2015\\Projects\\GraphQL\\cvgraphql\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\oleksandr.OK\\Documents\\Visual Studio 2015\\Projects\\GraphQL\\cvgraphql\\Model\\Model.csproj"
+            "C:\\development\\private\\cvgraphql\\Model\\Model.csproj": {
+              "projectPath": "C:\\development\\private\\cvgraphql\\Model\\Model.csproj"
             },
-            "C:\\Users\\oleksandr.OK\\Documents\\Visual Studio 2015\\Projects\\GraphQL\\cvgraphql\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\oleksandr.OK\\Documents\\Visual Studio 2015\\Projects\\GraphQL\\cvgraphql\\Repository\\Repository.csproj"
+            "C:\\development\\private\\cvgraphql\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\development\\private\\cvgraphql\\Repository\\Repository.csproj"
             }
           }
         }

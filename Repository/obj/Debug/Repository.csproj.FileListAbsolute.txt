@@ -27,3 +27,18 @@ C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Re
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Repository\obj\Debug\Repository.dll
 C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\GraphQL\cvgraphql\Repository\obj\Debug\Repository.pdb
+C:\development\private\cvgraphql\Repository\bin\Debug\Repository.dll.config
+C:\development\private\cvgraphql\Repository\bin\Debug\Repository.dll
+C:\development\private\cvgraphql\Repository\bin\Debug\Repository.pdb
+C:\development\private\cvgraphql\Repository\bin\Debug\EntityFramework.dll
+C:\development\private\cvgraphql\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\development\private\cvgraphql\Repository\bin\Debug\Model.dll
+C:\development\private\cvgraphql\Repository\bin\Debug\Model.pdb
+C:\development\private\cvgraphql\Repository\bin\Debug\EntityFramework.xml
+C:\development\private\cvgraphql\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\development\private\cvgraphql\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+C:\development\private\cvgraphql\Repository\obj\Debug\Repository.Migrations.initial.resources
+C:\development\private\cvgraphql\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
+C:\development\private\cvgraphql\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\development\private\cvgraphql\Repository\obj\Debug\Repository.dll
+C:\development\private\cvgraphql\Repository\obj\Debug\Repository.pdb

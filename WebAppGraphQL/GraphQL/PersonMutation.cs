@@ -1,5 +1,6 @@
 ﻿using GraphQL.Types;
 using Model;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -55,13 +56,29 @@ namespace WebAppGraphQL.GraphQL
 						{
 							if (item.Value == null)
 							{
-
-								var converter = fieldInfo.FieldType.GetMethod("op_Implicit", new[] { typeof(int?) });
-								if (converter != null)
+								var genType = fieldInfo.FieldType.GetGenericArguments()[0];
+								var nullableType = Nullable.GetUnderlyingType(genType);
+								if (nullableType != null)
 								{
-									var value = converter.Invoke(null, new[] { item.Value });
-									fieldInfo.SetValue(obj, value);
+									var converter = fieldInfo.FieldType.GetMethod("op_Implicit", new[] { nullableType });
+									if (converter != null)
+									{
+										var value = converter.Invoke(null, new[] { item.Value });
+										fieldInfo.SetValue(obj, value);
+									}
+
 								}
+								else
+								{
+
+									var converter = fieldInfo.FieldType.GetMethod("op_Implicit", new[] { genType });
+									if (converter != null)
+									{
+										var value = converter.Invoke(null, new[] { item.Value });
+										fieldInfo.SetValue(obj, value);
+									}
+								}
+
 							}
 							else
 							{
